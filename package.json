@@ -1,0 +1,55 @@
+{
+  "name": "component-trace-element-finder",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Simple helper functions for finding DOM elements using components names from data attribute",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x-kom/component-trace-element-finder"
+  },
+  "author": "x-kom.pl",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build": "babel src --extensions \".ts\" -d lib",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-typescript": "^7.1.0"
+  },
+  "keywords": [
+    "data",
+    "dataattribute",
+    "testing",
+    "traversal",
+    "dom",
+    "html"
+  ],
+  "babel": {
+    "presets": [
+      [
+        "@babel/env",
+        {
+          "targets": {
+            "esmodules": true
+          }
+        }
+      ],
+      "@babel/preset-typescript"
+    ],
+    "plugins": [
+      "@babel/proposal-class-properties",
+      "@babel/proposal-object-rest-spread"
+    ]
+  },
+  "files": [
+    "lib",
+    "README.md"
+  ]
+}
