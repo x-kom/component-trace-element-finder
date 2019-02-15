@@ -2,7 +2,7 @@
 Simple functions that help finding DOM elements through "component trace".
 
 ### React - babel plugin
-To get it working you can simply use https://github.com/x-kom/babel-plugin-react-component-trace-data-attr with default `separator` and `attribute` options.
+To get it working you can simply use [babel-plugin-react-component-trace-data-attr](https://github.com/x-kom/babel-plugin-react-component-trace-data-attr) with default `separator` and `attribute` options.
 
 ### Manual usage
 You can also manually add `data-component-trace` attributes to your dom elements and separate the component names using single space.
