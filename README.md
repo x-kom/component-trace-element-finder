@@ -10,8 +10,8 @@ You can also manually add `data-component-trace` attributes to your dom elements
 ## API
 | Method name | Description |
 |-------------|-------------|
-| **`findAllComponentsByTrace`**<br>`(name: string, parent?: Element | Document)` | Returns all elements that have `name` in their trace. Use `parent` to search only within the given element. |
-| **`findTopComponentsByTrace`**<br>`(name: string, parent?: Element | Document)` | Returns all elements that have `name` in their trace but **are not contained** within elements that have `name` in their trace too. Use `parent` to search only within the given element. |
+| **`findAllComponentsByTrace`**<br><code>(name: string, parent?: Element &#124; Document)</code> | Returns all elements that have `name` in their trace. Use `parent` to search only within the given element. |
+| **`findTopComponentsByTrace`**<br><code>(name: string, parent?: Element &#124; Document)</code> | Returns all elements that have `name` in their trace but **are not contained** within elements that have `name` in their trace too. Use `parent` to search only within the given element. |
 
 ## Example
 Consider the following HTML markup
